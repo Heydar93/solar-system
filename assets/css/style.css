@@ -1,0 +1,72 @@
+@import './partials/global.css';
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 50px auto;
+    perspective: 1000px;
+    animation: rotation 25s linear infinite;
+  }
+
+.sun {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(yellow, orange);
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    z-index: 2;
+    animation: sun-rotate 10s linear infinite;
+  }
+  
+
+  
+  .planet {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    animation: orbit-rotate 10s linear infinite;
+  }
+  
+  .mercury {
+    background-color: #b9b9b9;
+    animation-duration: 4s;
+  }
+  
+  .venus {
+    background-color: #e4a663;
+    animation-duration: 6s;
+  }
+  
+  .earth {
+    background-color: #64a0d8;
+    animation-duration: 8s;
+  }
+  
+  .mars {
+    background-color: #d05020;
+    animation-duration: 10s;
+  }
+  
+ 

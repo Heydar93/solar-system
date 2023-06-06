@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  @keyframes rotation {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+  @keyframes sun-rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  @keyframes orbit-rotate {
+    0% {
+      transform: rotate(0) translateX(120px) rotate(0);
+    }
+    100% {
+      transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+  }
+  
